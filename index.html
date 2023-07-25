@@ -20,23 +20,132 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="container mx-auto">
-      <nav class="md:flex text-center my-[50px] md:justify-between">
-        <a class="text-4xl font-bold" href="#">Bike Dekho</a>
-        <div class="flex gap-12 justify-center items-center">
-          <ul class="flex gap-9">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+    <header class="bg-[url(./img/Banner.png)] bg-cover bg-center relative">
+      <div
+        class="absolute h-full w-full left-0 top-0 z-10 bg-[url(./img/banner-overlay.png)] bg-cover bg-left opacity-80"
+      ></div>
+      <div class="flex flex-col justify-between h-screen">
+        <nav
+          class="container mx-auto md:flex text-center py-[50px] md:justify-between relative z-20"
+        >
+          <a class="text-4xl font-bold text-white" href="#">Bike Dekho</a>
+          <div class="flex gap-12 justify-center items-center">
+            <ul class="flex gap-9 text-white">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <button
+              class="inline-block py-4 px-12 bg-[#E76F51] rounded-md text-white text-xl font-semibold"
+            >
+              Login
+            </button>
+          </div>
+        </nav>
+        <div class="container mx-auto relative z-20 mt-32 pb-36">
+          <h1
+            class="text-white text-[65px] font-bold leading-[85px] max-w-[720px] mb-8"
+          >
+            Keep Your Ride Safe At Every Time
+          </h1>
+          <p class="text-base text-white max-w-[580px] mb-14">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
           <button
             class="inline-block py-4 px-12 bg-[#E76F51] rounded-md text-white text-xl font-semibold"
           >
-            Login
+            Purchase
           </button>
         </div>
-      </nav>
+      </div>
     </header>
+    <main class="container mx-auto">
+      <section class="mt-32">
+        <div class="mb-12">
+          <h2 class="text-center text-black font-semibold text-5xl">
+            Fetured Bikes In This Year
+          </h2>
+          <strong
+            class="text-sm font-semibold text-[#E76F51] text-center block relative"
+            >Best bike collection
+            <span
+              class="absolute w-16 h-0.5 bg-[#E76F51] bottom-0 left-[calc(50%_-_32px)]"
+            ></span>
+          </strong>
+        </div>
+        <div class="flex justify-between">
+          <img src="img/bike-1.png" alt="" />
+          <img src="img/bike-1.png" alt="" />
+          <img src="img/bike-1.png" alt="" />
+        </div>
+      </section>
+      <section class="mt-32">
+        <div class="mb-12">
+          <h2 class="text-center text-black font-semibold text-5xl capitalize">
+            latest News
+          </h2>
+        </div>
+        <!-- blogs -->
+        <div class="flex justify-between gap-5">
+          <div class="border shadow p-5 rounded-lg">
+            <div class="mb-10">
+              <img class="w-full" src="img/others/latest1.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">Ducati XDIAVEL S-73</h3>
+              <p class="text-[#6C6C6C] mb-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+
+              <button
+                class="inline-block py-4 px-12 bg-[#E76F51] rounded-md text-white text-xl font-semibold"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="border shadow p-5 rounded-lg">
+            <div class="mb-10">
+              <img class="w-full" src="img/others/latest1.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">Ducati XDIAVEL S-73</h3>
+              <p class="text-[#6C6C6C] mb-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+
+              <button
+                class="inline-block py-4 px-12 bg-[#E76F51] rounded-md text-white text-xl font-semibold"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="border shadow p-5 rounded-lg">
+            <div class="mb-10">
+              <img class="w-full" src="img/others/latest1.png" alt="" />
+            </div>
+            <div>
+              <h3 class="text-2xl font-semibold mb-2">Ducati XDIAVEL S-73</h3>
+              <p class="text-[#6C6C6C] mb-10">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+
+              <button
+                class="inline-block py-4 px-12 bg-[#E76F51] rounded-md text-white text-xl font-semibold"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
